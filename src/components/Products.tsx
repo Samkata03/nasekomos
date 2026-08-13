@@ -61,7 +61,7 @@ export function Products() {
 
                 {product.available ? (
                   <a
-                    href={`tel:+359${phoneNumber.replace(/^0, "")}`}
+                    href={`tel:+359${phoneNumber.replace(/^0/, "")}`}
                     className="mt-6 inline-flex w-full items-center justify-center rounded-xl bg-primary px-4 py-2.5 text-sm font-semibold text-primary-foreground transition-colors hover:bg-primary/90"
                   >
                     Поръчай по телефона
