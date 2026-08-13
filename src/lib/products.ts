@@ -3,6 +3,17 @@ import morioImg from "../assets/morio.jpg";
 import cockroachesImg from "../assets/cockroaches.jpg";
 import grasshoppersImg from "../assets/grasshoppers.jpg";
 
+export interface PackagingOption {
+  label: string;
+  price: string;
+  note?: string;
+}
+
+export interface ProductDetail {
+  title: string;
+  content: string;
+}
+
 export interface Product {
   id: string;
   name: string;
@@ -12,6 +23,9 @@ export interface Product {
   image: string;
   available: boolean;
   comingSoon?: boolean;
+  packaging?: PackagingOption[];
+  details?: ProductDetail[];
+  extraInfo?: string;
 }
 
 export const products: Product[] = [
@@ -48,6 +62,28 @@ export const products: Product[] = [
     benefits: ["Богати на протеин", "Тихи и спокойни", "Добро съотношение месо/котка"],
     image: cockroachesImg,
     available: true,
+    packaging: [
+      { label: "Кутия 100 броя, големи", price: "12,00€", note: "2,5 - 3,5 см" },
+      { label: "Кутия 50 броя, големи", price: "8,00€" },
+      { label: "Кутия 100 броя, средни", price: "10,00€", note: "1,5 - 2,5 см" },
+      { label: "Кутия 50 броя, средни", price: "6,00€" },
+      { label: "Кутия 100 броя, малки", price: "10,00€", note: "1 - 1,5 см" },
+      { label: "Кутия 50 броя, малки", price: "6,00€", note: "за малки агами" },
+    ],
+    details: [
+      {
+        title: "Големи нимфи",
+        content:
+          "Това плоско овално насекомо е отлична храна за агами, хамелеони, гущерите и др. Големите нимфи (дубия) са с размер 2,5 - 3,5 см. Този размер е чудесен за възрастни брадати агами. Вие получавате 10% повече бройки, за да се компенсира евентуална смъртност на някои от хлебарките при транспортирането.",
+      },
+      {
+        title: "Средни нимфи",
+        content:
+          "Средните нимфи (дубиа) с размер 1,5 - 2,5 см. Този размер е чудесна храна с много високо съдържание на протеин за непълнолетни до възрастни брадати агами, възрастни леопардови гекони и по-големи жаби. Вие получавате 10% повече бройки, за да се компенсира евентуална смъртност на някои от хлебарките при транспортирането.",
+      },
+    ],
+    extraInfo:
+      "Хлебарките Дубиа са по-хранителни от много други насекоми, които обикновено се използват за хранене на влечуги. Те са с по-ниско съдържание на мазнини от всички „червеи“ и по-високо съдържание на протеини и калций, отколкото повечето други насекоми, използвани за храна. Те също имат по-дълъг чревен тракт от щурците, което забавя храносмилането и го прави по-ефективно.",
   },
   {
     id: "grasshoppers",

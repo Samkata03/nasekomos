@@ -1,4 +1,4 @@
-import { Check, Clock } from "lucide-react";
+import { Check, Clock, Package } from "lucide-react";
 import { products, phoneNumber } from "@/lib/products";
 
 export function Products() {
@@ -58,6 +58,72 @@ export function Products() {
                     </li>
                   ))}
                 </ul>
+
+                {product.packaging && (
+                  <div className="mt-5 rounded-xl border border-border bg-background/50 p-3">
+                    <div className="flex items-center gap-2 text-sm font-semibold text-foreground">
+                      <Package className="h-4 w-4 text-leaf" aria-hidden="true" />
+                      Опаковка
+                    </div>
+                    <ul className="mt-2 space-y-2">
+                      {product.packaging.map((option) => (
+                        <li
+                          key={option.label}
+                          className="flex items-start justify-between gap-3 text-sm"
+                        >
+                          <span className="text-foreground/80">
+                            {option.label}
+                            {option.note && (
+                              <span className="ml-1 text-xs text-muted-foreground">
+                                ({option.note})
+                              </span>
+                            )}
+                          </span>
+                          <span className="shrink-0 font-semibold text-forest">{option.price}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
+
+                {product.details && (
+                  <details className="mt-4 rounded-xl border border-border bg-background/50">
+                    <summary className="cursor-pointer list-none p-3 text-sm font-semibold text-foreground marker:hidden [&::-webkit-details-marker]:hidden">
+                      <span className="flex items-center justify-between">
+                        Повече информация
+                        <svg
+                          className="h-4 w-4 text-muted-foreground transition-transform group-open/details:rotate-180"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                          aria-hidden="true"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M19 9l-7 7-7-7"
+                          />
+                        </svg>
+                      </span>
+                    </summary>
+                    <div className="space-y-3 px-3 pb-3">
+                      {product.details.map((detail) => (
+                        <div key={detail.title}>
+                          <h4 className="text-sm font-semibold text-foreground">{detail.title}</h4>
+                          <p className="mt-1 text-sm leading-relaxed text-muted-foreground">
+                            {detail.content}
+                          </p>
+                        </div>
+                      ))}
+                      {product.extraInfo && (
+                        <p className="text-sm leading-relaxed text-muted-foreground">
+                          {product.extraInfo}
+                        </p>
+                      )}
+                    </div>
+                  </details>
+                )}
 
                 {product.available ? (
                   <a
