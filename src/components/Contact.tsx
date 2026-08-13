@@ -25,7 +25,9 @@ export function Contact() {
                 </div>
                 <div>
                   <p className="text-sm text-muted-foreground">Телефон</p>
-                  <p className="font-heading text-lg font-semibold text-foreground">{phoneNumber}</p>
+                  <p className="font-heading text-lg font-semibold text-foreground">
+                    {phoneNumber}
+                  </p>
                 </div>
               </a>
 
@@ -51,7 +53,7 @@ export function Contact() {
               const email = data.get("email");
               const message = data.get("message");
               const body = encodeURIComponent(
-                `Запитване от ${siteName}\n\nИме: ${name}\nИмейл: ${email}\n\nСъобщение:\n${message}`
+                `Запитване от ${siteName}\n\nИме: ${name}\nИмейл: ${email}\n\nСъобщение:\n${message}`,
               );
               window.location.href = `mailto:?subject=Запитване от ${siteName}&body=${body}`;
             }}
@@ -98,10 +100,7 @@ export function Contact() {
               </div>
 
               <div>
-                <label
-                  htmlFor="message"
-                  className="mb-2 block text-sm font-medium text-foreground"
-                >
+                <label htmlFor="message" className="mb-2 block text-sm font-medium text-foreground">
                   Съобщение
                 </label>
                 <div className="relative">

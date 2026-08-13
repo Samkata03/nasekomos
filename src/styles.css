@@ -70,10 +70,10 @@
 
   /* Forest & Moss palette */
   --forest: oklch(0.325 0.052 158.516);
-  --moss: oklch(0.427 0.070 153.980);
+  --moss: oklch(0.427 0.07 153.98);
   --leaf: oklch(0.586 0.087 145.324);
   --sage: oklch(0.783 0.067 142.882);
-  --cream: oklch(0.980 0.005 78.246);
+  --cream: oklch(0.98 0.005 78.246);
 
   --background: var(--cream);
   --foreground: var(--forest);
@@ -85,7 +85,7 @@
   --primary-foreground: var(--cream);
   --secondary: var(--sage);
   --secondary-foreground: var(--forest);
-  --muted: oklch(0.940 0.015 142);
+  --muted: oklch(0.94 0.015 142);
   --muted-foreground: var(--moss);
   --accent: var(--leaf);
   --accent-foreground: var(--cream);
@@ -112,15 +112,15 @@
 .dark {
   --background: var(--forest);
   --foreground: var(--cream);
-  --card: oklch(0.280 0.045 158);
+  --card: oklch(0.28 0.045 158);
   --card-foreground: var(--cream);
-  --popover: oklch(0.280 0.045 158);
+  --popover: oklch(0.28 0.045 158);
   --popover-foreground: var(--cream);
   --primary: var(--sage);
   --primary-foreground: var(--forest);
   --secondary: var(--moss);
   --secondary-foreground: var(--cream);
-  --muted: oklch(0.380 0.040 152);
+  --muted: oklch(0.38 0.04 152);
   --muted-foreground: var(--sage);
   --accent: var(--leaf);
   --accent-foreground: var(--cream);
@@ -129,7 +129,7 @@
   --border: oklch(1 0 0 / 12%);
   --input: oklch(1 0 0 / 15%);
   --ring: var(--sage);
-  --sidebar: oklch(0.280 0.045 158);
+  --sidebar: oklch(0.28 0.045 158);
   --sidebar-foreground: var(--cream);
   --sidebar-primary: var(--sage);
   --sidebar-primary-foreground: var(--forest);
