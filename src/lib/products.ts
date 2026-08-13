@@ -1,5 +1,6 @@
 import mealwormsImg from "../assets/mealworms.jpg";
 import morioImg from "../assets/morio.jpg";
+import driedMealwormsImg from "../assets/dried-mealworms.jpg";
 import cockroachesImg from "../assets/cockroaches.jpg";
 import grasshoppersImg from "../assets/grasshoppers.jpg";
 
@@ -117,6 +118,33 @@ export const products: Product[] = [
     ],
     extraInfo:
       "Хлебарките Дубиа са по-хранителни от много други насекоми, които обикновено се използват за хранене на влечуги. Те са с по-ниско съдържание на мазнини от всички „червеи“ и по-високо съдържание на протеини и калций, отколкото повечето други насекоми, използвани за храна. Те също имат по-дълъг чревен тракт от щурците, което забавя храносмилането и го прави по-ефективно.",
+  },
+  {
+    id: "dried-mealworms",
+    name: "Сушен червей",
+    scientificName: "Tenebrio molitor",
+    description:
+      "Сушените брашнени червеи са удобна, дълготрайна и питателна храна за птици, риби, таралежи, влечуги и други любимци.",
+    benefits: [
+      "Богат на протеин",
+      "Дълъг срок на годност",
+      "Лесен за съхранение",
+    ],
+    image: driedMealwormsImg,
+    available: true,
+    packaging: [{ label: "1 литър", price: "9,00 лв." }],
+    details: [
+      {
+        title: "Хранителна стойност",
+        content:
+          "Високо съдържание на протеин — над 56%, мазнини — 25%, фибри — 12,5%, желязо — 77 мг/кг, калций — 837 мг/100 гр, фосфор — 833 мг/100 гр.",
+      },
+      {
+        title: "За кого е подходящ",
+        content:
+          "Отлична храна за птици, риби, таралежи, влечуги и др.",
+      },
+    ],
   },
   {
     id: "grasshoppers",
