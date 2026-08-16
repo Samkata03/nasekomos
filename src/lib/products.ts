@@ -160,5 +160,4 @@ export const products: Product[] = [
 ];
 
 export const phoneNumber = "0895523294";
-export const ownerName = "Ангел Маркузов";
 export const siteName = "nasekomos";

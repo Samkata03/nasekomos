@@ -1,5 +1,5 @@
 import { Heart, Sprout, Recycle } from "lucide-react";
-import { ownerName, siteName } from "@/lib/products";
+import { siteName } from "@/lib/products";
 
 const values = [
   {
@@ -39,15 +39,6 @@ export function About() {
               ще намерите подходяща храна за него.
             </p>
 
-            <div className="mt-8 flex items-center gap-4 rounded-2xl border border-border bg-card p-5">
-              <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-primary/10">
-                <span className="font-heading text-lg font-bold text-primary">АМ</span>
-              </div>
-              <div>
-                <p className="font-heading font-semibold text-foreground">{ownerName}</p>
-                <p className="text-sm text-muted-foreground">Собственик и отговаря за поръчките</p>
-              </div>
-            </div>
           </div>
 
           <div className="grid gap-6">

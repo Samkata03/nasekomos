@@ -1,5 +1,5 @@
 import { Bug, Phone } from "lucide-react";
-import { ownerName, phoneNumber, siteName } from "@/lib/products";
+import { phoneNumber, siteName } from "@/lib/products";
 
 const footerLinks = [
   { href: "#products", label: "Продукти" },
@@ -43,7 +43,6 @@ export function Footer() {
           <div>
             <h3 className="font-heading font-semibold text-cream">Контакти</h3>
             <div className="mt-4 space-y-2 text-sm text-cream/70">
-              <p>{ownerName}</p>
               <a
                 href={`tel:+359${phoneNumber.replace(/^0/, "")}`}
                 className="flex items-center gap-2 transition-colors hover:text-cream"

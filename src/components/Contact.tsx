@@ -1,5 +1,5 @@
 import { Phone, Mail, User, MessageSquare, Send } from "lucide-react";
-import { ownerName, phoneNumber, siteName } from "@/lib/products";
+import { phoneNumber, siteName } from "@/lib/products";
 
 export function Contact() {
   return (
@@ -31,15 +31,6 @@ export function Contact() {
                 </div>
               </a>
 
-              <div className="flex items-center gap-4 rounded-2xl border border-border bg-card p-5">
-                <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-primary/10">
-                  <User className="h-6 w-6 text-primary" aria-hidden="true" />
-                </div>
-                <div>
-                  <p className="text-sm text-muted-foreground">Лице за контакт</p>
-                  <p className="font-heading text-lg font-semibold text-foreground">{ownerName}</p>
-                </div>
-              </div>
             </div>
           </div>
 

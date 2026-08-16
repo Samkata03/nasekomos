@@ -81,9 +81,8 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       {
         name: "description",
         content:
-          "nasekomos предлага качествена жива храна за домашни любимци: брашнян червей, морио, хлебарки и скакалци. Доставка с Еконт от Ангел Маркузов.",
+          "nasekomos предлага качествена жива храна за домашни любимци: брашнян червей, морио, хлебарки и скакалци. Доставка с Еконт.",
       },
-      { name: "author", content: "Ангел Маркузов" },
       {
         property: "og:title",
         content: "nasekomos — жива храна за домашни любимци",
