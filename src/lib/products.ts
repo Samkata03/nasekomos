@@ -3,6 +3,7 @@ import morioImg from "../assets/morio.jpg";
 import driedMealwormsImg from "../assets/dried-mealworms.jpg";
 import cockroachesImg from "../assets/cockroaches.jpg";
 import grasshoppersImg from "../assets/grasshoppers.jpg";
+import bioFertilizerImg from "../assets/bio-fertilizer.jpg";
 
 export interface PackagingOption {
   label: string;
