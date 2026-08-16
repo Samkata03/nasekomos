@@ -1,5 +1,4 @@
 import { Truck, Package, MapPin, Phone } from "lucide-react";
-import { phoneNumber } from "@/lib/products";
 
 const steps = [
   {
@@ -59,19 +58,6 @@ export function Delivery() {
           ))}
         </div>
 
-        <div className="mt-12 rounded-3xl bg-moss-gradient p-8 text-center text-cream sm:p-12">
-          <h3 className="font-heading text-2xl font-bold sm:text-3xl">Готови за поръчка?</h3>
-          <p className="mx-auto mt-3 max-w-xl text-cream/90">
-            Обадете се директно, за да уточним наличностите и да организираме доставка до вас.
-          </p>
-          <a
-            href={`tel:+359${phoneNumber.replace(/^0/, "")}`}
-            className="mt-6 inline-flex items-center justify-center gap-2 rounded-full bg-cream px-8 py-3.5 text-lg font-semibold text-forest transition-colors hover:bg-cream/90"
-          >
-            <Phone className="h-5 w-5" aria-hidden="true" />
-            {phoneNumber}
-          </a>
-        </div>
       </div>
     </section>
   );
