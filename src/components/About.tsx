@@ -1,5 +1,5 @@
 import { Heart, Sprout, Recycle } from "lucide-react";
-import { ownerName, siteName } from "@/lib/products";
+import { siteName } from "@/lib/products";
 
 const values = [
   {

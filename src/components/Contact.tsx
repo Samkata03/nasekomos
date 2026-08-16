@@ -1,5 +1,5 @@
-import { Phone, Mail, User, MessageSquare, Send } from "lucide-react";
-import { ownerName, phoneNumber, siteName } from "@/lib/products";
+import { Phone, Mail, MessageSquare, Send } from "lucide-react";
+import { phoneNumber, siteName } from "@/lib/products";
 
 export function Contact() {
   return (

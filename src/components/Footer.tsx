@@ -1,5 +1,5 @@
 import { Bug, Phone } from "lucide-react";
-import { ownerName, phoneNumber, siteName } from "@/lib/products";
+import { phoneNumber, siteName } from "@/lib/products";
 
 const footerLinks = [
   { href: "#products", label: "Продукти" },
