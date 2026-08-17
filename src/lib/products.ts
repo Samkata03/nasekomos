@@ -122,7 +122,7 @@ export const products: Product[] = [
   },
   {
     id: "dried-mealworms",
-    name: "Сушен червей",
+    name: "Сушен брашнян червей",
     scientificName: "Tenebrio molitor",
     description:
       "Сушените брашнени червеи са удобна, дълготрайна и питателна храна за птици, риби, таралежи, влечуги и други любимци.",
@@ -133,7 +133,7 @@ export const products: Product[] = [
     ],
     image: driedMealwormsImg,
     available: true,
-    packaging: [{ label: "1 литър", price: "9,00 лв." }],
+    packaging: [{ label: "1 литър", price: "10,00 €" }],
     details: [
       {
         title: "Хранителна стойност",
@@ -161,9 +161,9 @@ export const products: Product[] = [
     image: bioFertilizerImg,
     available: true,
     packaging: [
-      { label: "1 литър", price: "3,00 лв." },
-      { label: "над 10 литра", price: "2,00 лв./л" },
-      { label: "над 100 литра", price: "1,00 лв./л" },
+      { label: "1 литър", price: "1,50 €" },
+      { label: "над 10 литра", price: "1,00 €/л" },
+      { label: "над 100 литра", price: "0,50 €/л" },
     ],
     details: [
       {
