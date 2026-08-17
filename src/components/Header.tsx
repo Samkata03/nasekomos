@@ -15,9 +15,9 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/50 bg-background/90 backdrop-blur-md">
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
-        <a href="#" className="flex items-center gap-2 text-foreground">
-          <Bug className="h-6 w-6 text-primary" aria-hidden="true" />
-          <span className="font-heading text-xl font-bold tracking-tight">{siteName}</span>
+        <a href="#" className="flex items-center gap-2.5 text-foreground">
+          <Bug className="h-8 w-8 text-primary" aria-hidden="true" />
+          <span className="font-heading text-2xl font-bold tracking-tight">{siteName}</span>
         </a>
 
         <nav className="hidden items-center gap-8 md:flex">
