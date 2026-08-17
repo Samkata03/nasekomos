@@ -16,9 +16,9 @@ export function Footer() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid gap-10 md:grid-cols-3">
           <div>
-            <a href="#" className="flex items-center gap-2 text-cream">
-              <Bug className="h-6 w-6 text-sage" aria-hidden="true" />
-              <span className="font-heading text-xl font-bold tracking-tight">{siteName}</span>
+            <a href="#" className="flex items-center gap-2.5 text-cream">
+              <Bug className="h-8 w-8 text-sage" aria-hidden="true" />
+              <span className="font-heading text-2xl font-bold tracking-tight">{siteName}</span>
             </a>
             <p className="mt-4 max-w-xs text-sm text-cream/70">
               Качествена жива храна за домашни любимци. Брашнян червей, морио, хлебарки и скакалци.
